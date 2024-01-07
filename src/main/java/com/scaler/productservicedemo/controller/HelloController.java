@@ -16,4 +16,3 @@ public class HelloController {
         return st.toString();
     }
 }
-]
