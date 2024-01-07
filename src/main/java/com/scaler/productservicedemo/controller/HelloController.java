@@ -11,8 +11,6 @@ public class HelloController {
     @GetMapping("/say/{name}/{times}")
     public  String  sayHello(@PathVariable("name") String name,
                              @PathVariable("times") int times){
-        StringBuilder st = new StringBuilder();
-        st.append(("Hello " + name + "<br>").repeat(Math.max(0, times)));
-        return st.toString();
+        return ("Hello " + name + "<br>").repeat(Math.max(0, times));
     }
 }
